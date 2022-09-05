@@ -1,5 +1,6 @@
 package lk.ijse.dep9.clinic.controller;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
@@ -11,6 +12,10 @@ public class ManageFieldsFormController {
     public Button btnDelete;
     public ListView<String> lstField;
     public TextField txtField;
+
+    public void initialize(){
+        Platform.runLater(txtField::requestFocus);
+    }
 
     public void btnSaveOnAction(ActionEvent actionEvent) {
     }

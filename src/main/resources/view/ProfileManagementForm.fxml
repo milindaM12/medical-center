@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.net.URL?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
-
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep9.clinic.controller.ProfileManagementFormController">
    <children>
-      <Label layoutX="40.0" layoutY="31.0" prefHeight="37.0" prefWidth="214.0" text="PROFILE MANAGEMENT" />
+      <Label layoutX="40.0" layoutY="31.0" prefHeight="37.0" prefWidth="214.0" text="PROFILE MANAGEMENT">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
       <TableView fx:id="tblDetails" layoutX="40.0" layoutY="74.0" prefHeight="284.0" prefWidth="404.0">
         <columns>
           <TableColumn prefWidth="105.0" text="USER NAME" />
@@ -19,7 +23,11 @@
         </columns>
       </TableView>
       <Button fx:id="btnNew" layoutX="466.0" layoutY="81.0" mnemonicParsing="false" onAction="#btnNewOnAction" prefHeight="37.0" prefWidth="108.0" text="NEW" />
-      <Button fx:id="btnModify" layoutX="466.0" layoutY="118.0" mnemonicParsing="false" onAction="#btnModifyOnAction" prefHeight="37.0" prefWidth="108.0" text="MODIFY" />
-      <Button fx:id="btnDelete" layoutX="466.0" layoutY="153.0" mnemonicParsing="false" onAction="#btnDelete" prefHeight="37.0" prefWidth="108.0" text="DELETE" />
+      <Button fx:id="btnModify" layoutX="466.0" layoutY="126.0" mnemonicParsing="false" onAction="#btnModifyOnAction" prefHeight="37.0" prefWidth="108.0" text="MODIFY" />
+      <Button fx:id="btnDelete" layoutX="466.0" layoutY="170.0" mnemonicParsing="false" onAction="#btnDelete" prefHeight="37.0" prefWidth="108.0" text="DELETE" />
    </children>
+   <stylesheets>
+      <URL value="@../css/style.css" />
+      <URL value="@../css/profileManagementForm.css" />
+   </stylesheets>
 </AnchorPane>

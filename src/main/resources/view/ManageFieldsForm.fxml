@@ -8,15 +8,14 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="401.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep9.clinic.controller.ManageFieldsFormController">
+<AnchorPane prefHeight="401.0" prefWidth="579.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep9.clinic.controller.ManageFieldsFormController">
    <children>
-      <Label layoutX="195.0" layoutY="48.0" text="Manage Fields">
+      <Label layoutX="195.0" layoutY="21.0" text="Manage Fields">
          <font>
             <Font size="31.0" />
          </font>
       </Label>
-      <VBox layoutX="465.0" layoutY="117.0" prefWidth="91.0">
+      <VBox layoutX="445.0" layoutY="117.0" prefWidth="91.0" spacing="10.0">
          <children>
             <Button fx:id="btnSave" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="25.0" prefWidth="91.0" text="Save" />
             <Button fx:id="btnNew" mnemonicParsing="false" onAction="#btnNewOnAction" prefHeight="26.0" prefWidth="91.0" text="New" />
@@ -25,5 +24,10 @@
       </VBox>
       <ListView fx:id="lstField" layoutX="42.0" layoutY="163.0" prefHeight="215.0" prefWidth="374.0" />
       <TextField fx:id="txtField" layoutX="42.0" layoutY="117.0" prefHeight="26.0" prefWidth="374.0" />
+      <Label alignment="CENTER" layoutX="195.0" layoutY="65.0" prefHeight="26.0" prefWidth="211.0" text="Add, Update or Delete Doctors' Fields">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
