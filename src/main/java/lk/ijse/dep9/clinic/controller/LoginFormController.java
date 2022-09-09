@@ -46,8 +46,10 @@ public class LoginFormController {
             txtUsername.selectAll();
             return;
         }
+
         Class.forName("com.mysql.cj.jdbc.Driver");
-        try(Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/medical_clinic", "root", "Padme@1995")){
+        try(Connection connection = DriverManager.
+                getConnection("jdbc:mysql://localhost:3306/medical_clinic", "root", "Padme@1995")){
             String sql = "SELECT role, password FROM User WHERE username=?"; /*positional parameters - SQL */
             /*sql = String.format(sql, username, password);
 
@@ -84,6 +86,7 @@ public class LoginFormController {
                 Stage stage = new Stage();
                 stage.setTitle("Medical Center");
                 stage.setScene(scene);
+                stage.setResizable(false);
                 stage.show();
                 stage.centerOnScreen();
 

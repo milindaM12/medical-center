@@ -53,8 +53,6 @@ public class ProfileFormController {
         }
     }
 
-
-
     public void btnSaveOnAction(ActionEvent actionEvent) {
 
     }

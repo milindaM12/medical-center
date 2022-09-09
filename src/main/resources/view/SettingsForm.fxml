@@ -8,7 +8,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="323.0" prefWidth="533.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep9.clinic.controller.SettingsFormController">
+<AnchorPane prefHeight="445.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep9.clinic.controller.SettingsFormController">
    <stylesheets>
       <URL value="@../css/style.css" />
       <URL value="@../css/settingsForm.css" />
@@ -19,16 +19,31 @@
             <Font size="28.0" />
          </font>
       </Label>
-      <VBox layoutX="29.0" layoutY="76.0" prefHeight="210.0" prefWidth="148.0">
+      <VBox layoutX="29.0" layoutY="76.0" prefHeight="210.0" prefWidth="148.0" spacing="5.0">
          <children>
-            <Button fx:id="btnHospitalfee" mnemonicParsing="false" onAction="#btnHospitalfeeOnAction" prefHeight="42.0" prefWidth="152.0" text="HOSPITAL FEE" />
-            <Button fx:id="btnDiscount" mnemonicParsing="false" onAction="#btnDiscountOnAction" prefHeight="42.0" prefWidth="154.0" text="DISCOUNT" />
-            <Button fx:id="btnManageFields" mnemonicParsing="false" onAction="#btnManageFieldsOnAction" prefHeight="42.0" prefWidth="152.0" text="MANAGE FIELDS" />
-            <Button fx:id="btnPassword" mnemonicParsing="false" onAction="#btnPassword" prefHeight="42.0" prefWidth="147.0" text="PASSWORD" />
-            <Button fx:id="btnAbout" mnemonicParsing="false" onAction="#btnAboutOnAction" prefHeight="42.0" prefWidth="150.0" text="ABOUT" />
+            <Button fx:id="btnHospitalfee" mnemonicParsing="false" onAction="#btnHospitalfeeOnAction" prefHeight="42.0" prefWidth="152.0" text="HOSPITAL FEE">
+               <font>
+                  <Font size="10.0" />
+               </font></Button>
+            <Button fx:id="btnDiscount" mnemonicParsing="false" onAction="#btnDiscountOnAction" prefHeight="42.0" prefWidth="154.0" text="DISCOUNT">
+               <font>
+                  <Font size="10.0" />
+               </font></Button>
+            <Button fx:id="btnManageFields" mnemonicParsing="false" onAction="#btnManageFieldsOnAction" prefHeight="42.0" prefWidth="152.0" text="MANAGE FIELDS">
+               <font>
+                  <Font size="10.0" />
+               </font></Button>
+            <Button fx:id="btnPassword" mnemonicParsing="false" onAction="#btnPassword" prefHeight="42.0" prefWidth="147.0" text="PASSWORD">
+               <font>
+                  <Font size="10.0" />
+               </font></Button>
+            <Button fx:id="btnAbout" mnemonicParsing="false" onAction="#btnAboutOnAction" prefHeight="42.0" prefWidth="150.0" text="ABOUT">
+               <font>
+                  <Font size="10.0" />
+               </font></Button>
          </children>
       </VBox>
-      <AnchorPane fx:id="pneContainer" layoutX="189.0" layoutY="76.0" prefHeight="210.0" prefWidth="329.0" />
-      <Line endX="356.0" layoutX="133.0" layoutY="56.0" startX="-100.0" />
+      <AnchorPane fx:id="pneContainer" layoutX="192.0" layoutY="76.0" prefHeight="352.0" prefWidth="330.0" />
+      <Line endX="386.0" layoutX="133.0" layoutY="56.0" startX="-100.0" />
    </children>
 </AnchorPane>

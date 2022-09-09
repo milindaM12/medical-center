@@ -16,8 +16,7 @@ public class AdminDashboardController {
     public Button btnLogOut;
 
     public void initialize(){
-        System.out.println(SecurityContextHolder.getPrinciple());
-    }
+        System.out.println(SecurityContextHolder.getPrinciple());    }
 
     public void btnProfileMgtOnAction(ActionEvent actionEvent) throws IOException {
         Stage stage = new Stage();
